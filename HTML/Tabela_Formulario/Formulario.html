@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Formulário</title>
+	<style type="text/css">
+		table {
+			border: none;
+			width: 800px;
+		}
+
+		th, td {
+			border: none;
+			padding: 10px;
+			width: 100px;
+			text-align: center;
+		}
+
+		#none {
+			background-color: #FFFFFF;
+		}
+
+		table th {
+			background-color: #D3FAFF;
+		}
+
+		table td {
+			background-color: #E8FCFF;
+		}
+
+		#header {
+			background-color: #FFFED1;
+			padding-top: 5px;
+			padding-left: 50px;
+			color: #FFC300;
+			font-size: 50px;
+			border: none;
+		}
+
+		#menu {
+			background-color: #FFC300;
+			padding: 1px;
+		}
+
+		#menu ul li {
+			display: inline;
+		}
+
+		#menu ul li a {
+			padding: 3px 5px;
+			display: inline-block;
+
+			color: #ffffff; 
+			text-decoration: none;
+			font-size: 25px;
+		}
+
+		#menu ul li a:hover {
+		    color: #FF8000;
+		}
+
+		h1 {
+			color: #FFC300;
+		}
+
+	</style>
+</head>
+<body>
+	<div id='header' style="margin-bottom: -70px;">
+		<h1>Bookshelf</h1>
+	</div>
+	<div id="menu">
+		<ul>
+			<li><a href="Tabela.html">Tabela</a></li>
+			<li><a href="">Formulário</a></li>
+		</ul>
+	</div>
+	<br>
+	<div id='body'>
+		<h1>Formulário de Cadastro</h1>
+		
+		<br><br><br>
+		<form>
+
+			<fieldset>
+				<legend>Contato</legend>
+
+					<p>
+						Foto de perfil: <input type="file" name="picture"/>
+					</p>
+					<p>
+						Nome completo: <input type="text" name="username" size="20" maxlength="50" required/>
+					</p>
+					<p>
+						E-mail: <input type="email" name="email" required/> 
+					</p>
+					<p>
+						Senha: <input type="password" name="password" required>
+					</p>
+					<p>
+						Telefone (com DDD): <input type="tel" id="telefone" name="telefone" pattern="[0-9]{11}">
+					</p>
+
+			</fieldset>
+
+			<br><br>
+			<fieldset>
+				<legend>Dados gerais</legend>
+
+					<p>
+						Data de nascimento: <input type="date" name="birth" required/>
+					</p>
+					<p>
+						Estado: <select name="uf" required>
+									<option value="AC">Acre</option>
+									<option value="AL">Alagoas</option>
+									<option value="AP">Amapá</option>
+									<option value="AM">Amazonas</option>
+									<option value="BA">Bahia</option>
+									<option value="CE">Ceará</option>
+									<option value="ES">Espírito Santo</option>
+									<option value="GO">Goiás</option>
+									<option value="MA">Maranhão</option>
+									<option value="MT">Mato Grosso</option>
+									<option value="MS">Mato Grosso do Sul</option>
+									<option value="MG">Minas Gerais</option>
+									<option value="PA">Pará</option>
+									<option value="PB">Paraíba</option>
+									<option value="PR">Paraná</option>
+									<option value="PE">Pernambuco</option>
+									<option value="PI">Piauí</option>
+									<option value="RJ">Rio de Janeiro</option>
+									<option value="RN">Rio Grande do Norte</option>
+									<option value="RS">Rio Grande do Sul</option>
+									<option value="RO">Rondônia</option>
+									<option value="RR">Roraima</option>
+									<option value="SC">Santa Catarina</option>
+									<option value="SP">São Paulo</option>
+									<option value="SE">Sergipe</option>
+									<option value="TO">Tocantins</option>
+									<option value="DF">Distrito Federal</option>
+								</select>
+					</p>
+
+			</fieldset>
+				
+			<br><br>
+
+			<fieldset>
+				<legend>Sobre você</legend>
+
+					<p>
+						Prefere livros: <input id="physical" type="radio" name="typebook" value="physical"/> 
+											<label for="physical">Físicos</label>
+										<input id="digital" type="radio" name="typebook" value="digital"/> 
+											<label for="digital">Digitais</label>
+										<input id="nopreference" type="radio" name="typebook" value="nopreference"/> 
+											<label for="nopreference">Não tenho preferência</label>
+					</p>
+					<p>
+						Gêneros preferidos: <input id="romance" type="checkbox" name="genre" value="romance">
+												<label for="romance">Romance</label>
+											<input id="autoajuda" type="checkbox" name="genre" value="autoajuda">
+												<label for="autoajuda">Auto-Ajuda</label>
+											<input id="romancepolicial" type="checkbox" name="genre" value="romancepolicial">
+												<label for="romancepolicial">Romance Policial</label>
+											<input id="terror" type="checkbox" name="genre" value="terror">
+												<label for="terror">Terror</label>
+											<input id="poesia" type="checkbox" name="genre" value="poesia">
+												<label for="poesia">Poesia</label>
+											<input id="ficcao" type="checkbox" name="genre" value="ficcao">
+												<label for="ficcao">Ficção Científica</label>
+											<input id="fantasia" type="checkbox" name="genre" value="fantasia">
+												<label for="fantasia">Fantasia</label>
+											<input id="infantojuvenil" type="checkbox" name="genre" value="infantojuvenil">
+												<label for="infantojuvenil">Infantojuvenil</label>
+											<input id="historico" type="checkbox" name="genre" value="historico">
+												<label for="historico">Histórico</label>
+					</p>	
+					<p>
+						Gostaria de acrescentar algo sobre você? 
+					</p>	
+						<textarea name="comment" cols="50" rows="5"m placeholder="Meu livro favorito..."></textarea>				
+					<p>
+						Link para um perfil seu em uma rede social: <input type="url" name="perfil">
+					</p>
+
+			</fieldset>
+
+			<br><br>
+
+			<input type="submit" value="Cadastrar">
+
+			<input type="reset">
+		</form>
+
+		<br><br>
+	</div>
+</body>
+</html>
