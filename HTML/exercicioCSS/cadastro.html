@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Cadastre-se | Bookshelf</title>
+	<link href="css/style.css" type "text/css" rel="stylesheet" />
+	<style type="text/css">
+		body .coluna2 h1{
+			text-align: center;
+			color: #009C9C;
+		}
+
+		form{
+			text-align: center;
+		}
+
+		.formulario input.campo{
+			width: 20em;
+			margin-left: 1em;
+			border: none;
+			border-bottom: 0.25em solid #009C9C;
+			box-shadow: none;
+		}
+
+		.coluna2 a{
+			text-decoration: none;
+			color: #009C9C;
+		}
+
+		a:hover{
+			font-weight: bolder;
+		}
+
+		fieldset{
+			width: 50%;
+			margin-left: 25%;
+			border: none;
+			box-shadow: 0em 0em 2em -0.375em #009C9C;
+			margin-top: 5em;
+			border-radius: 1em;
+		}
+
+		.botao{
+			background-color: #009C9C;
+			border: none;
+			color: #FFFFFF;
+			font-weight: bold;
+			padding: 1em 1.5em;
+			text-align: center;
+			opacity: 0.6;
+			transition: 0.3s;
+			cursor: pointer;
+		}
+
+		.botao:hover{
+			opacity: 1;
+		}
+	</style>
+</head>
+<body>
+	<div class="cabecalho">
+		<div class="header">
+			<form>
+				<input class="busca" type="search" name="pesquisa" placeholder=" Buscar no site">
+				<input class="pesquisar" type="submit" value="Buscar" />
+			</form>
+			
+			<h1><a href="index.html">Bookshelf</a></h1>	
+		</div>
+
+		<div class="topnav">
+			<a href="index.html">Home</a>
+			<a href="sobre_nos.html">Sobre Nós</a>
+			<a href="estante.html">Estante</a>
+			<a href="contatos.html">Contatos</a>
+			<a href="sign-in.html" style="float: right; border: solid; padding: 0.4em; margin: 0.4em;">Sign in</a>
+		</div>
+	</div>
+
+	<div>
+		<div class="coluna1">
+
+		</div>
+
+		<div class="coluna2">
+			<form class="formulario">
+				<fieldset>
+					<h1 style="margin-bottom: 2em;">Cadastre-se</h1>
+
+					
+					<input class="campo" type="text" name="name" placeholder="Nome..." style="width: 9.35em;">	
+					<input class="campo" type="text" name="surname" placeholder="Sobrenome..." style="width: 9.35em;">
+					<p><input class="campo" type="email" name="email" placeholder="E-mail..."/></p>
+					<p><input class="campo" type="password" name="senha" placeholder="Senha..." /></p>
+					<p><input class="campo" type="password" name="senha" placeholder="Repita a senha..." /></p><br>
+
+					<input class="botao" type="submit" value="Cadastrar" />
+					<input class="botao" type="reset" value="Resetar">
+				</fieldset>
+			</form>
+		</div>
+
+		<div class="coluna3">
+			
+		</div>
+	</div>
+
+</body>
+</html>
